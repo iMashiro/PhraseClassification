@@ -26,7 +26,7 @@ class PreProcessor():
 
     def _shave(self,text):
         texts = unicodedata.normalize('NFKD', text)
-        return ''.join([c for c in text if not unicodedata.combining(c)])
+        return ''.join([c for c in texts if not unicodedata.combining(c)])
 
     def _remove_stopwords(self,text):
         words = nltk.word_tokenize(text)
@@ -43,10 +43,10 @@ class PreProcessor():
         return ' '.join(lemmas)
 
     def pipeline(self, text : str):
-        text = self._remove_numbers(text)
+        #text = self._remove_numbers(text)
         text = text.lower()
-        text = self._remove_punctuations(text)
+        #text = self._remove_punctuations(text)
         text = self._shave(text)
         text = self._remove_stopwords(text)
-        text = self._lemmatize(text)
+        #text = self._lemmatize(text)
         return text

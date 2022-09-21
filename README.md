@@ -1,6 +1,8 @@
 # PhraseClassification
 A phrase multiclass classification solution
 
+Link: https://handtalk.notion.site/Classifica-o-de-frases-por-setor-18c80adbbf874c519c9efe19678ac4c1
+
 ## Instructions:
 
 Order of commands: 
