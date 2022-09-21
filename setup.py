@@ -7,5 +7,5 @@ setup(
     description='It Classifies Phrases',
     author='britohyago',
     license='',
-    install_requires=['pandas', 'nltk', 'spacy']
+    install_requires=['pandas', 'nltk', 'spacy', 'sklearn']
 )

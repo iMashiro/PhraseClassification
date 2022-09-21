@@ -5,6 +5,7 @@ from nltk.corpus import stopwords
 import unicodedata
 import re
 import spacy
+from spacy.cli import download
 
 class PreProcessor():
     def __init__(self):
@@ -14,7 +15,7 @@ class PreProcessor():
         try:
             self.nlp = spacy.load('pt_core_news_sm')
         except:
-            spacy.download('pt_core_news_sm')
+            download('pt_core_news_sm')
             self.nlp = spacy.load('pt_core_news_sm')
 
     def _remove_numbers(self,text):
