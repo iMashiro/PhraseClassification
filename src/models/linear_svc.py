@@ -1,19 +1,16 @@
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.naive_bayes import MultinomialNB
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.svm import LinearSVC
-from sklearn.linear_model import LogisticRegression
-
 
 from src.models.model import Model
 
-class NaiveBayes(Model):
+class Linear_SVC(Model):
     def __init__(self, classes):
         self.classes = classes
         self.model = Pipeline([
                 ('tfidf', CountVectorizer()),
-                ('clf', OneVsRestClassifier(MultinomialNB(fit_prior=True, class_prior=None), n_jobs=1)),
+                ('clf', OneVsRestClassifier(LinearSVC(), n_jobs=1)),
             ])
 
 
