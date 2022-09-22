@@ -5,7 +5,12 @@ A phrase multiclass classification solution.
 
 ### Steps to install requirements of the code:
 
-Installing pip-tools a tool to make src the root folder of repo.
+First, create an virtualenv and activate it with the commands:
+```
+python3 -m venv env
+source env/bin/activate
+```
+Then, installing pip-tools a tool to make src the root folder of repo.
 ```
 pip3 install pip-tools
 ```
