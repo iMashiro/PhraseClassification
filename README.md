@@ -47,6 +47,8 @@ The sentence can be just one or a list of sentences to be tested following the p
 The model_path is the path of the model the user wants to test.
 Following the example, it just needs to change the name of the model, since the models are saved in the same folder.
 
+To run the post request, the user will need to use a software like insomnia.
+
 ## Results
 Three different models were testes with different pipelines of pre-processment.
 
