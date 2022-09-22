@@ -10,17 +10,9 @@ First, create an virtualenv and activate it with the commands:
 python3 -m venv env
 source env/bin/activate
 ```
-Then, installing pip-tools a tool to make src the root folder of repo.
-```
-pip3 install pip-tools
-```
-Then run the below code to install the src as root folder.
+Then run the below code to install the src as root folder and install dependencies.
 ```
 pip3 install -e .
-```
-Finally, run the code to install the requirements.
-```
-pip3 install -r requirements.txt
 ```
 
 ### Steps to run code in train mode:
